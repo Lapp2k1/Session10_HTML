@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function phanLoaiDiem(diem) {
+        if (diem >= 75) {
+          return "Loại A";
+        } else if (diem >= 60) {
+          return "Loại B";
+        } else if (diem >= 45) {
+          return "Loại C";
+        } else if (diem >= 35) {
+          return "Loại D";
+        } else {
+          return "Loại E";
+        }
+      }
+
+      // Gọi hàm phanLoaiDiem và in kết quả ra màn hình
+      var diemHocVien = +prompt(
+        "Nhập vào điểm số của học viên (trên thang điểm 100):"
+      );
+      var ketQua = phanLoaiDiem(diemHocVien);
+      document.write("Học viên được phân loại: " + ketQua);
+    </script>
+  </body>
+</html>

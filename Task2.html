@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Bước 1: Sử dụng console.log để hiển thị thông báo
+      console.log("Đây là thông báo log.");
+
+      // Bước 2: Sử dụng console.error để hiển thị thông báo lỗi
+      console.error("Đây là thông báo lỗi.");
+
+      // Bước 3: Sử dụng console.warn để hiển thị cảnh báo
+      console.warn("Đây là cảnh báo.");
+
+      // Bước 4: Sử dụng console.clear để xóa console
+      console.clear();
+
+      // Bước 5: Sử dụng console.time & console.timeEnd để đo thời gian thực thi
+      console.time("Bộ đếm");
+      // ... thực hiện các tác vụ ...
+      console.timeEnd("Bộ đếm");
+
+      // Bước 6: Sử dụng console.table để hiển thị dữ liệu dưới dạng bảng
+      console.table({ a: 1, b: "Y" });
+
+      // Bước 7: Sử dụng console.count để đếm số lần gọi
+      console.count("Đếm");
+      console.count("Đếm");
+
+      // Bước 8: Sử dụng console.group & console.groupEnd để nhóm các thông báo
+      console.group("Nhóm 1");
+      console.log("Thông báo trong nhóm 1");
+      console.groupEnd();
+    </script>
+  </body>
+</html>

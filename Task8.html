@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function max() {
+        var daySo = prompt("Nhập vào dãy số, cách nhau bởi dấu phẩy (,):")
+          .split(",")
+          .map(Number);
+        var soLonNhat = daySo[0]; // Giả định số đầu tiên là số lớn nhất
+
+        // Sử dụng vòng lặp để so sánh từng số với số lớn nhất hiện tại
+        for (var i = 1; i < daySo.length; i++) {
+          if (daySo[i] > soLonNhat) {
+            soLonNhat = daySo[i]; // Cập nhật số lớn nhất nếu tìm thấy số lớn hơn
+          }
+        }
+
+        // Hiển thị số lớn nhất ra màn hình
+        document.write("Số lớn nhất trong dãy số là: " + soLonNhat);
+      }
+      max();
+    </script>
+  </body>
+</html>

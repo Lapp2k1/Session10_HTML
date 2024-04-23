@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      document.write("Bài 1");
+      document.write("<br/>");
+
+      function tinhDiem() {
+        var vatLy = parseFloat(prompt("Nhập điểm Vật lý:"));
+        var hoaHoc = parseFloat(prompt("Nhập điểm Hóa học:"));
+        var sinhHoc = parseFloat(prompt("Nhập điểm Sinh học:"));
+
+        var tongDiem = vatLy + hoaHoc + sinhHoc;
+        var diemTrungBinh = tongDiem / 3;
+
+        document.write("Tổng điểm: " + tongDiem + "<br>");
+        document.write("Điểm trung bình: " + diemTrungBinh.toFixed(2));
+      }
+      tinhDiem();
+      document.write("<hr/> <br/>");
+      document.write("Bài 2");
+      document.write("<br/>");
+
+      function chuyenDoiNhietDo() {
+        var doC = parseFloat(prompt("Nhập nhiệt độ Celsius:"));
+        var doF = (doC * 9) / 5 + 32;
+
+        document.write(doC + "°C tương đương với " + doF.toFixed(2) + "°F");
+      }
+      chuyenDoiNhietDo();
+
+      document.write("<hr/> <br/>");
+      document.write("Bài 3");
+      document.write("<br/>");
+
+      function tinhDienTichHinhTron() {
+        var banKinh = parseFloat(prompt("Nhập bán kính hình tròn:"));
+        var dienTich = Math.PI * banKinh ** 2;
+
+        document.write("Diện tích hình tròn là: " + dienTich.toFixed(2));
+      }
+      tinhDienTichHinhTron();
+
+      document.write("<hr/> <br/>");
+      document.write("Bài 4");
+      document.write("<hr/> <br/>");
+
+      function tinhChuViHinhTron() {
+        var banKinh = parseFloat(prompt("Nhập bán kính hình tròn:"));
+        var chuVi = 2 * Math.PI * banKinh;
+
+        document.write("Chu vi hình tròn là: " + chuVi.toFixed(2));
+      }
+      tinhChuViHinhTron();
+      document.write("<hr/> <br/>");
+
+    </script>
+  </body>
+</html>
